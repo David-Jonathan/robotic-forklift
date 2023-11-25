@@ -1,0 +1,29 @@
+{
+  "name": "robotic-forklift",
+  "version": "1.0.0",
+  "description": "Robotic forklift in a warehouse",
+  "main": "index.js",
+  "scripts": {
+    "build": "rimraf ./coverage && rimraf ./build && tsc",
+    "test": "jest --coverage --forceExit",
+    "test:watch": "jest --watch",
+    "run": "node build/index.js",
+    "start": "npm run build && npm run run"
+  },
+  "keywords": [],
+  "author": "Silas Thomas",
+  "license": "Personal",
+  "dependencies": {
+    "table": "^6.8.1"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.5.10",
+    "@types/node": "^20.9.5",
+    "jest": "^29.7.0",
+    "mock-stdin": "^1.0.0",
+    "rimraf": "^5.0.5",
+    "supertest": "^6.3.3",
+    "ts-jest": "^29.1.1",
+    "ts-node": "^10.9.1"
+  }
+}
